@@ -10,6 +10,9 @@ public class Main {
     int turtleCount = 0;
     System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
 
+    flipNHeads(1);
+
+
 
   }
 
@@ -21,6 +24,23 @@ public class Main {
     }
   }
 
+  public static void flipNHeads (int n) {
+
+    int counter = 0;
+    int headCounter = 0;
+
+    while (headCounter < n) {
+        counter++;
+      if (Math.random() < 0.5){
+        System.out.println("Tails");
+      } else {
+        System.out.println("Heads");
+        headCounter++;
+      }
+
+    }
+  System.out.println("It took " + counter + " flips to flip " + n + " heads in a row.");
+  }
 }
 
 // public class ExampleSyntax {
