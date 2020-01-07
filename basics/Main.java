@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+
 public class Main {
 
   public static void main(String[] args) {
@@ -12,7 +14,8 @@ public class Main {
 
     flipNHeads(1);
 
-
+    Main object = new Main();
+    object.clock();
 
   }
 
@@ -41,7 +44,26 @@ public class Main {
     }
   System.out.println("It took " + counter + " flips to flip " + n + " heads in a row.");
   }
+
+  private synchronized void clock() {
+
+
+    while(true) {
+    LocalDateTime now = LocalDateTime.now();
+    int hour = now.getHour();
+    int minute = now.getMinute();
+    int second = now.getSecond();
+    System.out.println(String.format("%d:%d:%d", hour, minute, second));
+    try {
+        this.wait(1000);
+      }
+      catch (InterruptedException e){
+        e.printStackTrace();
+      }
+    }
+  }
 }
+
 
 // public class ExampleSyntax {
 //   public static void main(String[] args) {
