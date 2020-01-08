@@ -5,19 +5,21 @@
 #### Tree
 -JavaFUNdamentals
 
-  -README.md
 
-  -basics
+    -README.md
 
-    -Main.class
+    -basics
 
-    -Main.java
+      -Main.class
 
-      -pluralize
+      -Main.java
 
-      -flipNHeads
+        -pluralize
+
+        -flipNHeads
       
-      -clock
+        -clock
+
 
 #### Pluralize
 - Used provided example as reference
