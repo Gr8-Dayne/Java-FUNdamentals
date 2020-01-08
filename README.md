@@ -33,3 +33,36 @@
 
 ###### Credit
 - I helped and was assisted by Daisy, Greg, Sergei, and Phong
+
+## LAB TWO
+
+#### Tree
+-JavaFUNdamentals
+
+
+    -README.md
+
+    -basics
+
+      -Main.class
+
+      -Main.java
+
+        -pluralize
+
+        -flipNHeads
+      
+        -clock
+
+
+#### Pluralize
+
+
+#### Flipping Coins
+
+
+#### Command Line Clock
+
+
+###### Credit
+
