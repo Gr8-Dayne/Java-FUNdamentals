@@ -15,7 +15,7 @@ public class Library {
             if (n > 0) {
                 System.out.println(result);
                 count--;
-            } else (n == 0) {
+            } else {
                 break;
             }
         }
