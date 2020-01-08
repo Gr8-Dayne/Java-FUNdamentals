@@ -7,8 +7,20 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test public void testTheDice() {
+
+        int[] arr = Library.Roll(3);
+
+        boolean test = false;
+        for (int i = 0; i < arr.length -1; i++) {
+            if (arr[i] > 0 && arr [i] <= 6) {
+                test = true;
+            } else {
+                test = false;
+                break;
+            }
+        }
+//        Library classUnderTest = new Library();
+        assertTrue("Roll should return 'true'", test);
     }
 }
