@@ -2,6 +2,7 @@
 
 package basiclibrary;
 
+import java.util.HashSet;
 
 public class Library {
 
@@ -53,6 +54,43 @@ public class Library {
         }
         return 0;
     }
+
+    // Temp hash
+    public static String weatherStuffs(int[][] hotness) {
+
+        int tempHigh = hotness[0][0];
+        int tempLow = hotness[0][0];
+
+        HashSet<Integer> temps = new HashSet<>();
+
+        for (int[] TemperatureArray : hotness) {
+
+            for (int k : TemperatureArray) {
+                temps.add(k);
+
+                if (k < tempLow) {
+                    tempLow = k;
+                }
+
+                if (k > tempHigh) {
+                    tempHigh = k;
+
+                }
+            }
+        }
+
+        String ticker = String.format("High: %d %nLow: %d", tempLow, tempHigh);
+
+        for (int k = tempLow; k < tempHigh; k++) {
+
+            if (!temps.contains(k)) {
+                ticker += String.format("%nTemp wasn't reached: %d", k);
+            }
+        }
+
+        return ticker;
+    }
+
 }
 
 
