@@ -35,34 +35,20 @@
 - I helped and was assisted by Daisy, Greg, Sergei, and Phong
 
 ## LAB TWO
+- Assignment was initially submitted on time, resubmitted before it was graded.
 
-#### Tree
--JavaFUNdamentals
+#### Rolling Dice
+- Once I got the test working, I was able to correctly utilize a for loop and Math.Random
 
+#### Contains Duplicates
+- Found an excellent model after hours of troubleshooting here: https://www.techiedelight.com/check-duplicates-array-java/
 
-    -README.md
+#### Calculating Averages
+- https://www.geeksforgeeks.org/program-average-array-iterative-recursive/
+- this website was instrumentle in my understanding of this part of the assignment
 
-    -basics
-
-      -Main.class
-
-      -Main.java
-
-        -pluralize
-
-        -flipNHeads
-      
-        -clock
-
-
-#### Pluralize
-
-
-#### Flipping Coins
-
-
-#### Command Line Clock
-
+#### Arrays of Arrays
+- Did not finish this one, I have questions about it
 
 ###### Credit
-
+- Assistance provided by Instructor(s), TA's, and fellow classmates on this one.
