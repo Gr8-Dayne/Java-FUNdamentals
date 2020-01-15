@@ -1,6 +1,27 @@
 # Java-FUNdamentals
 
 
+## LAB SEVEN - Inheritance: This time it's personal
+
+
+#### Shop
+
+- toString - 
+- Reviews - 
+- Tests - 
+
+#### Theater
+
+- toString - 
+- addMovie/removeMovie - 
+- Reviews - 
+- Tests - 
+
+
+###### Credit
+
+
+
 ## LAB SIX - Inheritance and Interfaces
 
 - Completed
