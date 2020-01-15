@@ -55,7 +55,7 @@
 
 #### Linter
 
-- 
+- Using the guidlines and the provided gates.js file, I was able to find the errors that were being thrown by the gates file. Then based on the gates file I created, I created several other files as apecified in order to carry out the rest of the assignment.
 
 ###### Credit
 
