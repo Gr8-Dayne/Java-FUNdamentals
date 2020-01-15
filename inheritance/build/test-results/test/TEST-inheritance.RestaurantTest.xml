@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="inheritance.RestaurantTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-15T04:12:27" hostname="38f9d3567566.ant.amazon.com" time="0.007">
+  <properties/>
+  <testcase name="getRestaurantNameTest" classname="inheritance.RestaurantTest" time="0.001"/>
+  <testcase name="getBallParkPriceTest" classname="inheritance.RestaurantTest" time="0.0"/>
+  <testcase name="restaurant_testGetReview_IllegalArg_InputValExceedsListSize" classname="inheritance.RestaurantTest" time="0.001"/>
+  <testcase name="restaurant_testGetReview_IllegalArg_InputValOneLessThanListSize" classname="inheritance.RestaurantTest" time="0.0"/>
+  <testcase name="restaurant_testToString" classname="inheritance.RestaurantTest" time="0.003"/>
+  <testcase name="getYelpRankingTest" classname="inheritance.RestaurantTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

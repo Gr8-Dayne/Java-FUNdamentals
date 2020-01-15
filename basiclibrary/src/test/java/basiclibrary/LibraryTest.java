@@ -1,14 +1,16 @@
-
-
 package basiclibrary;
 
-import org.junit.Test;
 
-import java.util.Locale;
+import org.junit.Test;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
+
 public class LibraryTest {
+
+    Library knowledge = new Library();
 
     @Test
     public void testRoll() {
@@ -54,50 +56,66 @@ public class LibraryTest {
         assertEquals(answer, Library.AveragesAssemble(testArray), .1);
     }
 
-    @Test public void testBelowAverage() {
+    @Test public void lowestArrayOfArraysTest() {
 
-        int[][] arrayOfArrays = {
-                {66, 64, 58, 65, 71, 57, 60},
-                {57, 65, 65, 70, 72, 65, 51},
-                {55, 54, 60, 53, 59, 57, 61},
-                {65, 56, 55, 52, 55, 62, 57}
+        int[][] providedData = {
+                {66, 64, 58, 65, 71, 57, 60}, // 63
+                {57, 65, 65, 70, 72, 65, 51}, // 63.5
+                {55, 54, 60, 53, 59, 57, 61}, // 57
+                {65, 56, 55, 52, 55, 62, 57}  // 57.4
         };
 
+        int[] expected = new int[]{55, 54, 60, 53, 59, 57, 61};
+        int[] actual = knowledge.lowestArrayOfArrays(providedData);
+
+        assertArrayEquals(expected, actual);
 
     }
 
-    @Test public void testWeatherTemperature() {
+    //
+    // Lab 03 Tests below this
+    //
 
-        assertEquals( Library.weatherStuffs(), .1);
+    @Test public void getWeatherAnalyticsTest() {
+
+        int[][] weeklyMonthTemperatures = {
+            {66, 64, 58, 65, 71, 57, 60},
+            {57, 65, 65, 70, 72, 65, 51},
+            {55, 54, 60, 53, 59, 57, 61},
+            {65, 56, 55, 52, 55, 62, 57}
+        };
+
+        String expected = "Never saw: 63 Never saw: 67 Never saw: 68 Never saw: 69 ";
+        String actual = Library.getWeatherAnalytics(weeklyMonthTemperatures);
+
+        assertEquals(expected, actual);
 
     }
 
+
+    @Test public void electionTallyTest() {
+
+        // Create empty array list
+        List<String> vote = new ArrayList<>();
+
+        // Add votes to empty array list
+        vote.add("Bush");
+        vote.add("Bush");
+        vote.add("Bush");
+        vote.add("Shrub");
+        vote.add("Hedge");
+        vote.add("Shrub");
+        vote.add("Bush");
+        vote.add("Hedge");
+        vote.add("Bush");
+
+        String expected = "Bush got the most votes.";
+        String victorForActual = Library.electionTally(vote);
+        String actual = victorForActual + " got the most votes.";
+
+        assertEquals(expected, actual);
+
+    }
 }
-
-//    @Test public void testCalculatingAveragesMethod() {
-//
-//        int[] inputArr = {2,4,5,6,8,3};
-//        float actual = Library.calculatingAverages(inputArr);
-//        int expected = 5;
-//
-//        assertEquals(expected, actual, 0.0001);
-//
-//    }
-//
-//    @Test public void testArraysOfArraysMethod() {
-//
-//        int[][] weeklyMonthTemperatures = {
-//                {66, 64, 58, 65, 71, 57, 60},
-//                {57, 65, 65, 70, 72, 65, 51},
-//                {55, 54, 60, 53, 59, 57, 61},
-//                {65, 56, 55, 52, 55, 62, 57}
-//        };
-//
-//        int actual = Library.arraysOfArrays(weeklyMonthTemperatures);
-//        int expected = 57;
-//
-//        assertEquals(expected, actual);
-//
-//    }
 
 
