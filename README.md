@@ -1,5 +1,6 @@
 # Java-FUNdamentals
 
+
 ## LAB SIX - Inheritance and Interfaces
 
 - Completed
@@ -22,31 +23,50 @@
 
 
 
-## LAB TWO
+## LAB TWO and THREE
 
-- Assignment was initially submitted on time, resubmitted before it was graded.
+- Assignment was initially submitted on time, resubmitted later.
 
 #### Rolling Dice
+
 - Once I got the test working, I was able to correctly utilize a for loop and Math.Random
 
 #### Contains Duplicates
+
 - Found an excellent model after hours of troubleshooting here: https://www.techiedelight.com/check-duplicates-array-java/
 
 #### Calculating Averages
+
 - https://www.geeksforgeeks.org/program-average-array-iterative-recursive/
+
 - this website was instrumentle in my understanding of this part of the assignment
 
 #### Arrays of Arrays
-- Did not finish this one, I have questions about it
+
+- This one was tough, I took TA James' advice and iterated through the arrays and returned the lowest average.
+
+#### Analyzing Weather Data
+
+- After learning how to use the toString method with Linked Lists, I applied what I could and it started working.
+
+#### Tallying Election
+
+- Using the provided list, I iterated through it twice, once looking for how many times a name appeared and adding a "vote" with the name as a key and again to see what name appeared the most to declair the "victor".
+
+#### Linter
+
+- 
 
 ###### Credit
-- Assistance provided by Instructor(s), TA's, and fellow classmates on this one.
+
+- Assistance provided by Instructor(s), TA James, and fellow classmates (namely Greg and Micah) on this one.
 
 
 
 ## LAB ONE
 
 #### Tree
+
 -JavaFUNdamentals
 
 
@@ -66,13 +86,17 @@
 
 
 #### Pluralize
+
 - Used provided example as reference
 
 #### Flipping Coins
+
 - Utilized Math.random to flip coins
 
 #### Command Line Clock
+
 - Was assisted by the provided link
+
 - Stack overflow was also used as reference
 
 ###### Credit
