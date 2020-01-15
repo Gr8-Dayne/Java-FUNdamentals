@@ -1,8 +1,8 @@
-
-
 package basiclibrary;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class Library {
 
@@ -45,72 +45,104 @@ public class Library {
         return arraySum / averageArray.length;
     }
 
-    public static int arrayOfArrays(int[] finalArray) {
+    public int[] lowestArrayOfArrays(int[][] inputArrays) {
 
-        // I am lost on this one
-        for (int i = 0; i < finalArray.length; i++) {
+        int lAOAIndex = 0;
+        double lowAverage = 100000000.0;
 
+        for (int i = 0; i < inputArrays.length; i++) {
 
+            for (int j = 0; j < inputArrays.length; j++) {
+
+                double nextAvg = AveragesAssemble(inputArrays[j]);
+
+                if (nextAvg < lowAverage) {
+                    lowAverage = nextAvg;
+                    lAOAIndex = j;
+                }
+            }
         }
-        return 0;
+        return inputArrays[lAOAIndex];
     }
 
-    // Temp hash
-    public static String weatherStuffs(int[][] hotness) {
+    //
+    // Lab 03 Methods below this
+    //
 
-        int tempHigh = hotness[0][0];
-        int tempLow = hotness[0][0];
+    public static String getWeatherAnalytics(int[][] weatherArray){
 
-        HashSet<Integer> temps = new HashSet<>();
+        // Create high/low weather arrays
+        int low = weatherArray[0][0];
+        int high = weatherArray[0][0];
 
-        for (int[] TemperatureArray : hotness) {
+        // Create empty string
+        HashSet<Integer> varyingTemperatures = new HashSet<>();
+        StringBuilder answer = new StringBuilder();
 
-            for (int k : TemperatureArray) {
-                temps.add(k);
 
-                if (k < tempLow) {
-                    tempLow = k;
+        for (int i = 0; i < weatherArray.length; i++){
+
+            for (int j = 0; j < weatherArray[i].length; j++){
+
+                if (weatherArray[i][j] < low){
+                    low = weatherArray[i][j];
                 }
 
-                if (k > tempHigh) {
-                    tempHigh = k;
-
+                if (weatherArray[i][j] > high){
+                    high = weatherArray[i][j];
                 }
+
+                varyingTemperatures.add(weatherArray[i][j]);
+
             }
         }
 
-        String ticker = String.format("High: %d %nLow: %d", tempLow, tempHigh);
+//        System.out.println("High: " + high);
+//        System.out.println("Low: " + low);
 
-        for (int k = tempLow; k < tempHigh; k++) {
+        // Build string
+        for (int i = low + 1; i < high; i++){
 
-            if (!temps.contains(k)) {
-                ticker += String.format("%nTemp wasn't reached: %d", k);
+            if (!varyingTemperatures.contains(i)){
+                answer.append("Never saw: ").append(i).append(" ");
             }
         }
 
-        return ticker;
+        return answer.toString();
+
+    }
+
+
+    public static String electionTally(List<String> votes) {
+
+        // Create
+        HashMap<String, Integer> electoralMap = new HashMap<>();
+
+        // Start from scratch
+        int votesSum = 0;
+        String victor = "";
+
+        // Iterate through votes
+        for (String vote : votes){
+            if (electoralMap.containsKey(vote)){
+                electoralMap.put(vote, electoralMap.get(vote) + 1);
+            } else {
+                electoralMap.put(vote, 1);
+            }
+        }
+
+        // Iterate through names (strings/keys)
+        for (String key : electoralMap.keySet()) {
+            if (votesSum < electoralMap.get(key)) {
+                votesSum = electoralMap.get(key);
+                victor = key;
+            }
+        }
+
+        System.out.println(victor + " got the most votes.");
+        return victor;
     }
 
 }
 
 
-// a new array of integers starts with a value of zero for every index.
-//int[] temperatures = new int[7];
-//for (int i = 0; i < temperatures.length; i++) {
-//    System.out.println(temperatures[i]);
-//}
-
-// a new array of strings starts with a value of null for every index.
-//String[] dayNames = new String[7];
-//for (int i = 0; i < dayNames.length; i++) {
-//    System.out.println(dayNames[i]);
-//}
-
-// an array can be hard-coded with values initially using curly braces.
-//int[] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-//String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-
-//for (int i = 0; i < months.length; i++) {
-//    String message = "There are " + daysInMonth[i] + " days in " + months[i];
-//    System.out.println(message);
-//}
