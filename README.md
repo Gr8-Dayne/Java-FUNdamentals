@@ -2,21 +2,23 @@
 
 ## LAB SIX - Inheritance and Interfaces
 
-- This is where my completed lab would be.........if I had one.
+- Completed
 
 #### Resturaunt
 
+- Created constructor method for a restaurant followed by several methods to retrieve information from the restaurant.
 
 #### Review
 
+- Created constructor method for reviews along with methods to pull bits of information from the reviews themselves.
 
 #### addReview
 
-
-#### Arrays of Arrays
-
+- A method I had to create to create and insert nodes into a linked list of reviews for a specific restaurant.
 
 ###### Credit
+
+- Got the @Before assertion idea from Micah. Although I didn't need to use it, I wanted to try it out.
 
 
 
