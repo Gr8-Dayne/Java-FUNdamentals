@@ -6,24 +6,22 @@ import java.util.LinkedList;
 
 public class Restaurant {
 
-    // Attributes for the Objects
     public String titleOfRestaurant;
-    public int ballParkPrice;
-    public double yelpReview;
+    public int resBallParkPrice;
+    public double foodQuality;
     public LinkedList<Review> customerFeedback;
 
-    // Create Restaurant Constructor
-    public Restaurant(String restaurantName, int priceCategory) {
+    public Restaurant(String restaurantName, int priceCategory, double yeetReview) {
 
         this.titleOfRestaurant = restaurantName;
-        this.ballParkPrice = priceCategory;
-        this.yelpReview = 3.0;
+        this.resBallParkPrice = priceCategory;
+        this.foodQuality = yeetReview;
         this.customerFeedback = new LinkedList<>();
 
     }
 
     // Method to create nodes for the Linked List with inputted reviews
-    public void addReview(Review review) {
+    public void addRestaurantReview(Review review) {
 
         this.customerFeedback.add(review);
 
@@ -37,21 +35,21 @@ public class Restaurant {
     }
 
     // Method for getting Restaurant affordability
-    public int getBallParkPrice() {
+    public int getResBallParkPrice() {
 
-        return this.ballParkPrice;
+        return this.resBallParkPrice;
 
     }
 
     // Method for getting Restaurant ranking
-    public double getYelpRanking() {
+    public double getResZelpRanking() {
 
-        return this.yelpReview;
+        return this.foodQuality;
 
     }
 
     // Method to pull out a specific review from the Linked List
-    public Review getFullReview(int valueOfNodeBeingChecked) {
+    public Review getFullRestaurantReview(int valueOfNodeBeingChecked) {
 
         if (valueOfNodeBeingChecked > this.customerFeedback.size() || valueOfNodeBeingChecked < 0) {
 
@@ -64,14 +62,14 @@ public class Restaurant {
     }
 
     // Method for getting nodes in the Linked list
-    public int getReviewCount() {
+    public int getRestaurantReviewCount() {
 
         return this.customerFeedback.size();
 
     }
 
     // Method to convert reviews to strings
-    public String toString() {
+    public String resToString() {
 
         StringBuilder restaurantStr = new StringBuilder();
 
@@ -79,14 +77,14 @@ public class Restaurant {
         restaurantStr.append(this.titleOfRestaurant);
         restaurantStr.append(" :: Price Category: ");
 
-        for (int i = 0; i < this.ballParkPrice; i++) {
+        for (int i = 0; i < this.resBallParkPrice; i++) {
 
             restaurantStr.append("$");
 
         }
 
         restaurantStr.append(" :: Star Ranking: ");
-        restaurantStr.append(String.format("%.01f", this.yelpReview));
+        restaurantStr.append(String.format("%.01f", this.foodQuality));
 
         return restaurantStr.toString();
 

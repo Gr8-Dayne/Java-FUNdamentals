@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b722f0cb-5bd7-458c-8bf8-824f276a6722" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Theater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/inheritance/ShopTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/inheritance/TheaterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bitmap-transformer" beforeDir="false" afterPath="$PROJECT_DIR$/../bitmap-transformer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -17,13 +13,27 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/inheritance.RestaurantTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/inheritance.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/inheritance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-inheritance.RestaurantTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/inheritance/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/inheritance/Restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/inheritance/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/inheritance/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/inheritance/RestaurantTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/inheritance/RestaurantTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/inheritance/ReviewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/inheritance/ReviewTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/inheritance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inheritance/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inheritance/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inheritance/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/inheritance/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inheritance/Theater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inheritance/RestaurantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/inheritance/RestaurantTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inheritance/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/inheritance/ReviewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inheritance/ShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/inheritance/ShopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inheritance/TheaterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/inheritance/TheaterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +99,7 @@
       <recent name="inheritance" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TheaterTest">
+  <component name="RunManager" selected="Gradle.ShopTest">
     <configuration name="RestaurantTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -150,12 +160,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ShopTest.ShopToStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ShopTest.retrieveBMWReview" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;inheritance.ShopTest.ShopToStringTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;inheritance.ShopTest.retrieveBMWReview&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -170,12 +180,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TheaterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TheaterTest.TheaterToStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;inheritance.TheaterTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;inheritance.TheaterTest.TheaterToStringTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -192,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TheaterTest" />
-        <item itemvalue="Gradle.ShopTest.ShopToStringTest" />
         <item itemvalue="Gradle.ShopTest" />
-        <item itemvalue="Gradle.RestaurantTest" />
+        <item itemvalue="Gradle.ShopTest.retrieveBMWReview" />
+        <item itemvalue="Gradle.TheaterTest.TheaterToStringTest" />
         <item itemvalue="Gradle.ReviewTest" />
+        <item itemvalue="Gradle.RestaurantTest" />
       </list>
     </recent_temporary>
   </component>
@@ -230,22 +240,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1579115850729" />
-    <state width="1398" height="281" key="GridCell.Tab.0.bottom" timestamp="1579119270272">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1579120022610">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579119270272" />
-    <state width="1398" height="281" key="GridCell.Tab.0.center" timestamp="1579119270270">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1579120022610" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom" timestamp="1579125167969">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579119270270" />
-    <state width="1398" height="281" key="GridCell.Tab.0.left" timestamp="1579119270270">
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579125167969" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center" timestamp="1579125167968">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579119270270" />
-    <state width="1398" height="281" key="GridCell.Tab.0.right" timestamp="1579119270271">
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579125167968" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left" timestamp="1579125167967">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579119270271" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579125167967" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right" timestamp="1579125167968">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579125167968" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1579061602800">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -266,13 +280,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1579118813309" />
-    <state x="458" y="210" key="extract.method.dialog" timestamp="1579117470021">
+    <state x="458" y="210" key="extract.method.dialog" timestamp="1579122979233">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="210" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1579117470021" />
-    <state x="427" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1579117447772">
+    <state x="458" y="210" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1579122979233" />
+    <state x="427" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1579122655617">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="427" y="63" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1579117447772" />
+    <state x="427" y="63" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1579122655617" />
   </component>
 </project>

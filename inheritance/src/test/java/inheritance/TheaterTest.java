@@ -16,17 +16,17 @@ public class TheaterTest {
 
         BNT = new Theater("Bill Nye's Theater", 4, 1.9);
 
-        Review MovieReviewOne = new Review("David made my car run again! Too many BMW's though...", "Greg", 5);
-        Review MovieReviewTwo = new Review("This guy can change a tire with only his feet!", "James", 5);
-        Review MovieReviewThree = new Review("The mechanic cleaned my car so well, I could eat off of it.", "Ryan", 5);
-        Review MovieReviewFour = new Review("They brought me some dope-ass tea while I waited.", "Xavier", 5);
-        Review MovieReviewFive = new Review("I tried to speak to the manager but he WAS the 'manager'!", "Karen", 2);
+        Review MovieReviewOne = new Review("He kept coming up to me and screaming: BILL! BILL! BILL! BILL!", "Greg", 1);
+        Review MovieReviewTwo = new Review("This guy can change a tire with only his feet!", "James", 1/2);
+        Review MovieReviewThree = new Review("I got UNLIMITED POPCORN for only $65!!!", "Ryan", 5);
+        Review MovieReviewFour = new Review("The movie was good, I got robbed right outside though.", "Xavier", 2);
+        Review MovieReviewFive = new Review("There's no managers of any kind here.", "Karen", 3);
 
-        BNT.addReview(MovieReviewOne);
-        BNT.addReview(MovieReviewTwo);
-        BNT.addReview(MovieReviewThree);
-        BNT.addReview(MovieReviewFour);
-        BNT.addReview(MovieReviewFive);
+        BNT.addTheaterReview(MovieReviewOne);
+        BNT.addTheaterReview(MovieReviewTwo);
+        BNT.addTheaterReview(MovieReviewThree);
+        BNT.addTheaterReview(MovieReviewFour);
+        BNT.addTheaterReview(MovieReviewFive);
 
     }
 
@@ -44,7 +44,7 @@ public class TheaterTest {
     @Test public void getBallParkPriceTest() {
 
         int expected = 4;
-        int actual = BNT.getBallParkPrice();
+        int actual = BNT.getTheaterBallParkPrice();
 
         assertEquals(expected, actual);
 
@@ -54,7 +54,7 @@ public class TheaterTest {
     @Test public void getZelpRankingTest() {
 
         double expected = 1.9;
-        double actual = BNT.getZelpRanking();
+        double actual = BNT.getTicketSales();
 
         assertEquals(expected, actual, .001);
 
@@ -64,18 +64,18 @@ public class TheaterTest {
     // Exceptions in case review numbers are too high/low
     @Test(expected = IllegalArgumentException.class)
     public void illegalYeetTheaterParameterCheck() {
-        BNT.getFullReview(BNT.getReviewCount() + 1);
+        BNT.getFullTheaterReview(BNT.getReviewCount() + 1);
     }
     @Test(expected = IllegalArgumentException.class)
     public void negativeIllegalTheaterParameterCheck() {
-        BNT.getFullReview(-1);
+        BNT.getFullTheaterReview(-1);
     }
 
     // Making the data readable
     @Test public void TheaterToStringTest() {
 
         String expected = "Name: Bill Nye's Theater :: Price Category: $$$$ :: Star Ranking: 1.9";
-        String actual = BNT.toString();
+        String actual = BNT.theaterToString();
 
         assertEquals(expected, actual);
 

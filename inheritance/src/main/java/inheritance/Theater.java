@@ -7,21 +7,21 @@ import java.util.LinkedList;
 public class Theater {
 
     public String titleOfTheater;
-    public int ballParkPrice;
-    public double zelpReview;
+    public int theaterBallParkPrice;
+    public double ticketSales;
     public LinkedList<Review> IMDS;
 
     public Theater (String TheaterName, int priceCategory, double yeetReview) {
 
         this.titleOfTheater = TheaterName;
-        this.ballParkPrice = priceCategory;
-        this.zelpReview = yeetReview;
+        this.theaterBallParkPrice = priceCategory;
+        this.ticketSales = yeetReview;
         this.IMDS = new LinkedList<>();
 
     }
 
     // Method to create nodes for the Linked List with inputted reviews
-    public void addReview(Review review) {
+    public void addTheaterReview(Review review) {
 
         this.IMDS.add(review);
 
@@ -35,21 +35,21 @@ public class Theater {
     }
 
     // Method for getting Theater affordability
-    public int getBallParkPrice() {
+    public int getTheaterBallParkPrice() {
 
-        return this.ballParkPrice;
+        return this.theaterBallParkPrice;
 
     }
 
     // Method for getting Theater ranking
-    public double getZelpRanking() {
+    public double getTicketSales() {
 
-        return this.zelpReview;
+        return this.ticketSales;
 
     }
 
     // Method to pull out a specific review from the Linked List
-    public Review getFullReview(int valueOfNodeBeingChecked) {
+    public Review getFullTheaterReview(int valueOfNodeBeingChecked) {
 
         if (valueOfNodeBeingChecked > this.IMDS.size() || valueOfNodeBeingChecked < 0) {
 
@@ -69,24 +69,24 @@ public class Theater {
     }
 
     // Method to convert reviews to strings
-    public String toString() {
+    public String theaterToString() {
 
-        StringBuilder restaurantStr = new StringBuilder();
+        StringBuilder theaterStr = new StringBuilder();
 
-        restaurantStr.append("Name: ");
-        restaurantStr.append(this.titleOfTheater);
-        restaurantStr.append(" :: Price Category: ");
+        theaterStr.append("Name: ");
+        theaterStr.append(this.titleOfTheater);
+        theaterStr.append(" :: Price Category: ");
 
-        for (int i = 0; i < this.ballParkPrice; i++) {
+        for (int i = 0; i < this.theaterBallParkPrice; i++) {
 
-            restaurantStr.append("$");
+            theaterStr.append("$");
 
         }
 
-        restaurantStr.append(" :: Star Ranking: ");
-        restaurantStr.append(String.format("%.01f", this.zelpReview));
+        theaterStr.append(" :: Star Ranking: ");
+        theaterStr.append(String.format("%.01f", this.ticketSales));
 
-        return restaurantStr.toString();
+        return theaterStr.toString();
 
     }
 }
