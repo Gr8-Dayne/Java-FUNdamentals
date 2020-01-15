@@ -66,6 +66,12 @@ public class LibraryTest {
 
     }
 
+    @Test public void testWeatherTemperature() {
+
+        assertEquals( Library.weatherStuffs(), .1);
+
+    }
+
 }
 
 //    @Test public void testCalculatingAveragesMethod() {
