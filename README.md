@@ -1,25 +1,16 @@
 # Java-FUNdamentals
 
 
-## LAB SEVEN - Inheritance: This time it's personal
+## LAB SEVEN - Inheritance 2: This time it's personal
 
 
 #### Shop
 
-- toString - 
-- Reviews - 
-- Tests - 
-
-#### Theater
-
-- toString - 
-- addMovie/removeMovie - 
-- Reviews - 
-- Tests - 
-
+* To run this you can run ./gradlew test in the CLI or import the app to IntelliJ and run it from there.
+* Used <a href=https://stackoverflow.com/questions/7428039/java-constructor-method-with-optional-parameters>stackoverflow</a> and <a href=https://github.com/codefellows/seattle-java-401d7/tree/master/class-06>Class Demos</a> as references.
 
 ###### Credit
-
+- Most of my asisstance came from my TA, James. He was instrumental in directing me down the path of victory.
 
 
 ## LAB SIX - Inheritance and Interfaces
