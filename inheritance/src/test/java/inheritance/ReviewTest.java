@@ -12,7 +12,7 @@ public class ReviewTest {
     Review ninetyNineReviewFive = new Review("Chicken was undercooked, I spoke to the manager!", "Karen", 3);
 
     // See if constructor works
-    @Test public void ReviewConstructorTest() {
+    @Test public void reviewConstructorTest() {
 
         String expected_revCom = "Why are there eggs in the water?";
         String expected_auth = "Greg";
@@ -25,58 +25,41 @@ public class ReviewTest {
         assertEquals(expected_revCom, actual_revCom);
         assertEquals(expected_auth, actual_auth);
         assertEquals(expected_numStars, actual_numStars);
-
     }
 
     // Test only getting the Review Comment
     @Test public void getReviewCommentTest() {
-
         String expected = "Dope atmosphere, really liked the vietnamese coffee.";
         String actual = ninetyNineReviewFour.getReviewComment();
-
         assertEquals(actual, expected);
-
     }
 
     // Test only getting the Author
     @Test public void getAuthorTest() {
-
         String expected = "Karen";
         String actual = ninetyNineReviewFive.getAuthor();
-
         assertEquals(expected, actual);
-
     }
 
     // Test only getting the Rating
     @Test public void getRatingTest() {
-
         int expected = 5;
         int actual = ninetyNineReviewThree.getRating();
-
         assertEquals(expected, actual);
-
     }
 
     // Test the limits of the reviews
     @Test(expected = IllegalArgumentException.class) public void illegalInput_TooHighTest() {
-
         ninetyNineReviewTwo = new Review("Pretty sure they stole my cat.", "James", 7);
-
     }
     @Test(expected = IllegalArgumentException.class) public void illegalInput_TooLowTest() {
-
         ninetyNineReviewTwo = new Review("Pretty sure they stole my cat.", "James", -7);
-
     }
 
     // Test toString method
-    @Test public void toStringTest() {
-
+    @Test public void revToStringTest() {
         String expected = "Author: Karen :: Review: Chicken was undercooked, I spoke to the manager! :: Number of Stars: 3";
-        String actual = ninetyNineReviewFive.toString();
-
+        String actual = ninetyNineReviewFive.revToString();
         assertEquals(expected, actual);
-
     }
 }

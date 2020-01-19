@@ -15,7 +15,7 @@ public class RestaurantTest {
     // Add reviews to restaurant
     @Before public void createLinkedList() {
 
-        pho_99 = new Restaurant("Pho 99", 3);
+        pho_99 = new Restaurant("Pho 99", 3, 3.0);
 
         Review ninetyNineReviewOne = new Review("Why are there eggs in the water?", "Greg", 1);
         Review ninetyNineReviewTwo = new Review("Pretty sure they stole my cat.", "James", 2);
@@ -28,59 +28,53 @@ public class RestaurantTest {
         pho_99.addReview(ninetyNineReviewThree);
         pho_99.addReview(ninetyNineReviewFour);
         pho_99.addReview(ninetyNineReviewFive);
-
     }
 
-    // Test to get name of restaurant
-    @Test public void getRestaurantNameTest() {
-
+    @Test public void getResNameTest() {
         String expected = "Pho 99";
-        String actual = pho_99.getRestaurantName();
-
+        String actual = pho_99.getName();
         assertEquals(expected, actual);
-
     }
 
-    // Test to get ballpark price estimate of restaurant
-    @Test public void getBallParkPriceTest() {
-
+    @Test public void getResBallParkPriceTest() {
         int expected = 3;
-        int actual = pho_99.getBallParkPrice();
-
+        int actual = pho_99.getPrice();
         assertEquals(expected, actual);
-
     }
 
     // Test to get the review of restaurant
-    @Test public void getYelpRankingTest() {
-
+    @Test public void getResZelpRankingTest() {
         double expected = 3.0;
-        double actual = pho_99.getYelpRanking();
-
+        double actual = pho_99.getQuality();
         assertEquals(expected, actual, .001);
+    }
 
+    @Test public void getSpecificResReview() {
+        String expected = "Author: Xavier :: Review: Dope atmosphere, really liked the vietnamese coffee. :: Number of Stars: 4";
+        String actual = pho_99.customerFeedback.get(3).revToString();
+        assertEquals(expected, actual);
+    }
+
+    @Test public void getNumberOfResNodes() {
+        System.out.println(pho_99.getReviewCount());
+        int expected = 5;
+        int actual = pho_99.getReviewCount();
+        assertEquals(expected, actual);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void restaurant_testGetReview_IllegalArg_InputValExceedsListSize() {
-
+    public void illegalYeetResParameterCheck() {
         pho_99.getFullReview(pho_99.getReviewCount() + 1);
-
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void restaurant_testGetReview_IllegalArg_InputValOneLessThanListSize() {
-
+    public void negativeIllegalResParameterCheck() {
         pho_99.getFullReview(-1);
-
     }
 
-    @Test public void restaurant_testToString() {
-
+    @Test public void res_ToStringTest() {
         String expected = "Name: Pho 99 :: Price Category: $$$ :: Star Ranking: 3.0";
         String actual = pho_99.toString();
-
         assertEquals(expected, actual);
-
     }
 }

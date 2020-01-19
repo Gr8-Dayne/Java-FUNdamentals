@@ -6,18 +6,16 @@ import java.util.LinkedList;
 
 public class Restaurant {
 
-    // Attributes for the Objects
-    public String titleOfRestaurant;
-    public int ballParkPrice;
-    public double yelpReview;
+    public String name;
+    public int price;
+    public double quality;
     public LinkedList<Review> customerFeedback;
 
-    // Create Restaurant Constructor
-    public Restaurant(String restaurantName, int priceCategory) {
+    public Restaurant(String name, int price, double quality) {
 
-        this.titleOfRestaurant = restaurantName;
-        this.ballParkPrice = priceCategory;
-        this.yelpReview = 3.0;
+        this.name = name;
+        this.price = price;
+        this.quality = quality;
         this.customerFeedback = new LinkedList<>();
 
     }
@@ -30,23 +28,23 @@ public class Restaurant {
     }
 
     // Method for getting Restaurant name
-    public String getRestaurantName() {
+    public String getName() {
 
-        return this.titleOfRestaurant;
+        return this.name;
 
     }
 
     // Method for getting Restaurant affordability
-    public int getBallParkPrice() {
+    public int getPrice() {
 
-        return this.ballParkPrice;
+        return this.price;
 
     }
 
     // Method for getting Restaurant ranking
-    public double getYelpRanking() {
+    public double getQuality() {
 
-        return this.yelpReview;
+        return this.quality;
 
     }
 
@@ -76,17 +74,17 @@ public class Restaurant {
         StringBuilder restaurantStr = new StringBuilder();
 
         restaurantStr.append("Name: ");
-        restaurantStr.append(this.titleOfRestaurant);
+        restaurantStr.append(this.name);
         restaurantStr.append(" :: Price Category: ");
 
-        for (int i = 0; i < this.ballParkPrice; i++) {
+        for (int i = 0; i < this.price; i++) {
 
             restaurantStr.append("$");
 
         }
 
         restaurantStr.append(" :: Star Ranking: ");
-        restaurantStr.append(String.format("%.01f", this.yelpReview));
+        restaurantStr.append(String.format("%.01f", this.quality));
 
         return restaurantStr.toString();
 
