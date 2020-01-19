@@ -12,7 +12,7 @@ public class ReviewTest {
     Review ninetyNineReviewFive = new Review("Chicken was undercooked, I spoke to the manager!", "Karen", 3);
 
     // See if constructor works
-    @Test public void ReviewConstructorTest() {
+    @Test public void reviewConstructorTest() {
 
         String expected_revCom = "Why are there eggs in the water?";
         String expected_auth = "Greg";

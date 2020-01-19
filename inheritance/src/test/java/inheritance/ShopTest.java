@@ -22,78 +22,58 @@ public class ShopTest {
         Review BMWReviewFour = new Review("They brought me some dope-ass tea while I waited.", "Xavier", 5);
         Review BMWReviewFive = new Review("I tried to speak to the manager but he WAS the 'manager'!", "Karen", 2);
 
-        davidsShop.ShopAddReview(BMWReviewOne);
-        davidsShop.ShopAddReview(BMWReviewTwo);
-        davidsShop.ShopAddReview(BMWReviewThree);
-        davidsShop.ShopAddReview(BMWReviewFour);
-        davidsShop.ShopAddReview(BMWReviewFive);
+        davidsShop.addReview(BMWReviewOne);
+        davidsShop.addReview(BMWReviewTwo);
+        davidsShop.addReview(BMWReviewThree);
+        davidsShop.addReview(BMWReviewFour);
+        davidsShop.addReview(BMWReviewFive);
     }
 
-    // Trying to pull info from Shop
-//    @Test public void retrieveBMWReview() {
-//
-//        Object expected = ("The mechanic cleaned my car so well, I could eat off of it.", "Ryan", 5);
-//
-//        Object ShopAddReview
-//
-//        assertEquals(expected, actual);
-//
-//    }
-
-
-    // Test to get name of Shop
     @Test public void getShopNameTest() {
-
         String expected = "David's Shop";
-        String actual = davidsShop.getShopName();
-
+        String actual = davidsShop.getName();
         assertEquals(expected, actual);
-
     }
 
-    // Test to get ballpark price estimate of Shop
     @Test public void getShopBallParkPriceTest() {
-
         int expected = 1;
-        int actual = davidsShop.getShopBallParkPrice();
-
+        int actual = davidsShop.getPrice();
         assertEquals(expected, actual);
-
     }
 
-    // Test to get the review of Shop
-    @Test public void getYelpRankingTest() {
-
+    // Test to get the review of restaurant
+    @Test public void getShopZelpRankingTest() {
         double expected = 4.7;
-        double actual = davidsShop.getQualityRanking();
-
+        double actual = davidsShop.getQuality();
         assertEquals(expected, actual, .001);
-
     }
 
+    @Test public void getSpecificShopReview() {
+        String expected = "Author: Ryan :: Review: The mechanic cleaned my car so well, I could eat off of it. :: Number of Stars: 5";
+        String actual = davidsShop.customerFeedback.get(2).revToString();
+        assertEquals(expected, actual);
+    }
 
-    // Exceptions in case review numbers are too high/low
+    @Test public void getNumberOfShopNodes() {
+        System.out.println(davidsShop.getReviewCount());
+        int expected = 5;
+        int actual = davidsShop.getReviewCount();
+        assertEquals(expected, actual);
+    }
+
     @Test(expected = IllegalArgumentException.class)
     public void illegalYeetShopParameterCheck() {
-
         davidsShop.getFullReview(davidsShop.getReviewCount() + 1);
-
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void negativeIllegalShopParameterCheck() {
-
         davidsShop.getFullReview(-1);
-
     }
 
-    // Making the data readable
-    @Test public void restaurant_ToStringTest() {
-
+    @Test public void shop_ToStringTest() {
         String expected = "Name: David's Shop :: Price Category: $ :: Star Ranking: 4.7";
-        String actual = davidsShop.shopToString();
-
+        String actual = davidsShop.toString();
         assertEquals(expected, actual);
-
     }
 }
